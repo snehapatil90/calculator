@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>basic calculator</title>
+	<style type="text/css">
+		
+	</style>
+</head>
+<body>
+<div id="wrap">
+	<form method="POST" name="calcForm">
+		<input type="text" name="answer" id="display">
+		<input type="button" value="clear" onclick="calcForm.answer.value = '' "><br><br>
+		<input type="button" value="1" onclick="calcForm.answer.value += '1' ">
+		<input type="button" value="2" onclick="calcForm.answer.value += '2' ">
+		<input type="button" value="3" onclick="calcForm.answer.value += '3' ">
+		<input type="button" value="+" onclick="calcForm.answer.value += '+' "><br><br>
+		<input type="button" value="4" onclick="calcForm.answer.value += '4' "> 
+		<input type="button" value="5" onclick="calcForm.answer.value += '5' ">
+		<input type="button" value="6" onclick="calcForm.answer.value += '6' ">
+		<input type="button" value="-" onclick="calcForm.answer.value += '-' "><br><br>
+		<input type="button" value="7" onclick="calcForm.answer.value += '7' ">
+		<input type="button" value="8" onclick="calcForm.answer.value += '8' ">
+		<input type="button" value="9" onclick="calcForm.answer.value += '9' ">
+		<input type="button" value="*" onclick="calcForm.answer.value += '*' "><br><br>
+		<input type="button" value="0" onclick="calcForm.answer.value += '0' ">
+		<input type="button" value="." onclick="calcForm.answer.value += '.' ">
+		<input type="button" value="=" onclick="calcForm.answer.value = eval(calcForm.answer.value) ">
+		<input type="button" value="/" onclick="calcForm.answer.value += '/' "><br><br>
+	</form>
+</div>
+</body>
+</html>
